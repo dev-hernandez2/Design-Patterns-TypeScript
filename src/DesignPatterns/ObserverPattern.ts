@@ -31,7 +31,13 @@ export namespace ObserverMethodPattern {
       this.observerList.splice(this.observerList.indexOf(o));
     }
 
-    public notifyObservers(): void {}
+    public notifyObservers(): void {
+      for (let observer of this.observerList) {
+        observer.update();
+        console.log(observer.update());
+        break;
+      }
+    }
 
     // get latest runs from stadium
     private getLatestRuns(): number {
@@ -58,6 +64,7 @@ export namespace ObserverMethodPattern {
       this.runs = this.getLatestRuns();
       this.wickets = this.getLatestWickets();
       this.overs = this.getLatestOvers();
+      this.notifyObservers();
     }
   }
 
