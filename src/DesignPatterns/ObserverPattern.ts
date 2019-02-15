@@ -33,9 +33,7 @@ export namespace ObserverMethodPattern {
 
     public notifyObservers(): void {
       for (let observer of this.observerList) {
-        observer.update();
-        console.log(observer.update());
-        break;
+        observer.update(this.runs, this.wickets, this.overs);
       }
     }
 
