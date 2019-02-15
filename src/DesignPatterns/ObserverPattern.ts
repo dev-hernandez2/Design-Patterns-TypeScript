@@ -19,12 +19,12 @@ export namespace ObserverMethodPattern {
     overs: number;
     observerList: Array<Observer>;
 
-    public CricketData(): void {
+    constructor() {
       this.observerList = new Array<Observer>();
     }
 
     public registerObserver(o: Observer): void {
-      console.log(o);
+      this.observerList.push(o);
     }
 
     public unregisterObserver(o: Observer): void {}
