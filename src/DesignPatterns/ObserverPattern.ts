@@ -78,7 +78,7 @@ export namespace ObserverMethodPattern {
 
     public display(): void {
       console.log(`\nAverage Score Display: \n
-        Run Rate: ${this.runRate} \n 
+        Run Rate: ${this.runRate}
         PredictedScore: ${this.predictedScore}`)
     }
   }
