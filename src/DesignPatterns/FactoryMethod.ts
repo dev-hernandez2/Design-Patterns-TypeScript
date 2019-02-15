@@ -12,19 +12,19 @@ export namespace VehicleFactoryMethodPattern {
 
   class TwoWheeler implements IVehicle {
     public printVehicle(): string {
-      return "I am two wheeler"
+      return 'I am two wheeler'
     }
   }
 
   class ThreeWheeler implements IVehicle {
     public printVehicle(): string {
-      return "I am three wheeler"
+      return 'I am three wheeler'
     }
   }
 
   class FourWheeler implements IVehicle {
     public printVehicle(): string {
-      return "I am four wheeler"
+      return 'I am four wheeler'
     }
   }
 

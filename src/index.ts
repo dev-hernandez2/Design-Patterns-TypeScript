@@ -1,10 +1,10 @@
 // Design Patterns | (Factory Method)
-import { VehicleFactoryMethodPattern } from "./DesignPatterns/FactoryMethod"
-import { ObserverMethodPattern } from "./DesignPatterns/ObserverPattern"
+import { VehicleFactoryMethodPattern } from './DesignPatterns/FactoryMethod'
+import { ObserverMethodPattern } from './DesignPatterns/ObserverPattern'
 
 ObserverMethodPattern.main()
 VehicleFactoryMethodPattern.getVehicle()
-document.getElementById("app").innerHTML = ` 
+document.getElementById('app').innerHTML = ` 
 <h1>Hello Parcel!</h1>
 <div>
   Look
