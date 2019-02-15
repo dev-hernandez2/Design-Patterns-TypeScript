@@ -43,6 +43,7 @@ export namespace VehicleFactoryMethodPattern {
 
   export function getVehicle(): void {
     const motoVehicle: IVehicle = VehicleFactory.create(VehicleType.twoWheeler);
+    console.log(motoVehicle.printVehicle());
     return motoVehicle.printVehicle();
   }
 }
