@@ -105,11 +105,11 @@ export namespace ObserverMethodPattern {
 
   export function main() {
     // create objects for testing
-    const averageScoreDisplay = new AverageScoreDisplay()
-    const currentScoreDisplay = new CurrentScoreDisplay()
+    const averageScoreDisplay: AverageScoreDisplay = new AverageScoreDisplay()
+    const currentScoreDisplay: CurrentScoreDisplay = new CurrentScoreDisplay()
 
     // pass the displays to Cricket data
-    const cricketData = new CricketData()
+    const cricketData: CricketData = new CricketData()
 
     // register display elements
     cricketData.registerObserver(averageScoreDisplay)
