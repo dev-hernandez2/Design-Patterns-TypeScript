@@ -27,7 +27,9 @@ export namespace ObserverMethodPattern {
       this.observerList.push(o);
     }
 
-    public unregisterObserver(o: Observer): void {}
+    public unregisterObserver(o: Observer): void {
+      this.observerList.splice(this.observerList.indexOf(o));
+    }
 
     public notifyObservers(): void {}
 
